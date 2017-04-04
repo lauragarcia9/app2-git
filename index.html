@@ -1,0 +1,352 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segunda aplicacion movil</title>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+ <!--grupo CSS-->
+ <link rel="stylesheet" href="css/tema-app2.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+ <!--grupo JavaScript-->
+ <script src="js/jquery-1.11.2.min.js"></script>
+ <script src="js/jquery.mobile-1.4.5.min.js"></script>
+ <script src="js/acciones.js"></script>
+ <script src="phonegap.js"></script>
+ <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+ </script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/telefonos.png','imagenes/historia.png','imagenes/futuro.png','imagenes/ga.jpg','imagenes/mundo.png')">
+
+ <div data-role="page" id="Principal" data-theme="c">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Telefonia celular </h1>
+  </div>
+  <div data-role="main" class="ui-content">
+   </div>
+   <div>
+    <ul data-role="listview" data-theme="c" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+     <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Que es un telefono celular</h2>
+      <p>Definición</p>
+     </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+     <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Historia del telefono celular</h2>
+      <p>Breve resumen de la historia del telefono</p>
+     </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+     <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Clasificacion de los celulares</h2>
+      <p>Clasificación de los celulares deacuerdo a su gama</p>
+     </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+     <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Compañias en Mexico</h2>
+      <p>Compañias en Mexico que manejan el servicio de compañias celular</p>
+     </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+     <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Telefonos del futuro</h2>
+      <p>Muestra otros gustos del alumno</p>
+     </a>
+    </li>
+    </ul>
+    <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/celulares_.png" alt="celulares " title="celulares " id="wows1_0"/></li>
+		<li><img src="data1/images/evolucion.png" alt="evolucion" title="evolucion" id="wows1_1"/></li>
+		<li><img src="data1/images/lineas.jpg" alt="lineas" title="lineas" id="wows1_2"/></li>
+		<li><img src="data1/images/movilesdelfuturo.png" alt="movilesdelfuturo" title="movilesdelfuturo" id="wows1_3"/></li>
+		<li><img src="data1/images/mundo.png" alt="mundo" title="mundo" id="wows1_4"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/nokia.png" alt="wowslideshow" title="nokia" id="wows1_5"/></a></li>
+		<li><img src="data1/images/telefonos.png" alt="telefonos" title="telefonos" id="wows1_6"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="celulares "><span><img src="data1/tooltips/celulares_.png" alt="celulares "/>1</span></a>
+		<a href="#" title="evolucion"><span><img src="data1/tooltips/evolucion.png" alt="evolucion"/>2</span></a>
+		<a href="#" title="lineas"><span><img src="data1/tooltips/lineas.jpg" alt="lineas"/>3</span></a>
+		<a href="#" title="movilesdelfuturo"><span><img src="data1/tooltips/movilesdelfuturo.png" alt="movilesdelfuturo"/>4</span></a>
+		<a href="#" title="mundo"><span><img src="data1/tooltips/mundo.png" alt="mundo"/>5</span></a>
+		<a href="#" title="nokia"><span><img src="data1/tooltips/nokia.png" alt="nokia"/>6</span></a>
+		<a href="#" title="telefonos"><span><img src="data1/tooltips/telefonos.png" alt="telefonos"/>7</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">http://wowslider.net/</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+   </div>
+   <div data-role="footer" align="center" data-theme="c" data-position="fixed">
+    <div>
+     <img src="imagenes/logo.png" width="46" height="46">
+    </div>
+    <div>
+     <h4>Aplicacion Dos</h4>
+     <h4>Laura Garcia Maldonado</h4>
+    </div>
+   </div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="c">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Que es un telefono celular</h1>
+   </div>
+   <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+    <h1 align="center"> Telefono Celular</h1>
+     <div>
+      <p align="center"> Ejemplo de telefonos movil: </p>
+      <div align="center"><br>
+      </div>
+     </div>
+     <div>
+       <div align="center"><img src="imagenes/celulares .png" width="37%" height="28%"></div>
+     </div>
+    </div>
+   </div>
+   <div data-role="content" align="center">
+    <div>
+     <h2 align="left">Un teléfono móvil o celular es un teléfono portátil que puede hacer y recibir llamadas a través de una portadora de radiofrecuencia mientras el usuario se está moviendo dentro de un área de servicio telefónico. En adición a la telefonía, los teléfonos móviles de la era de los 2000 soportan una variedad de otros servicios, tales como mensajes de texto, MMS, correo electrónico, acceso a Internet, comunicaciones inalámbricas de corto alcance (infrarrojos, Bluetooth), aplicaciones de negocios, juegos de azar, y la fotografía digital. Los teléfonos móviles que ofrecen estos y más capacidades de computación se los conoce como teléfonos inteligentes.</h2>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image111','','imagenes/telefonos.png',1)"><img src="imagenes/movil.png" width="254" height="179" id="Image111"></a>     </div>
+  </div>
+    <div data-role="footer" data-theme="c" data-position="fixed">
+     <h4>Aplicacion Dos, LGM</h4>
+    </div>
+</div>
+ 
+ 
+<div data-role="page" id="Pagina2"  data-add-back-btn="true" data-theme="c">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Historia del telefono celular</h1>
+    </div>
+<div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+    <h1 align="center"> Imagen </h1>
+     <div>
+      <p align="center"> Evolucion: </p>
+      <div align="center"><br>
+      </div>
+     </div>
+     <div>
+       <div align="center"><img src="imagenes/evol.png" width="38%" height="27%"></div>
+     </div>
+  </div>
+   </div>
+    <div data-role="content" align="center">
+     <div>
+      <h2 align="left">Tres décadas atrás fue creado el primer aparato que abrió el camino al desarrollo de la tecnología de telefonía móvil.Hace 30 años la compañía finlandesa Nokia creó el primer teléfono portátil: un aparato de 9,5 kilos que fue fabricado para ser utilizado en dentro los automóviles. Un año después empezó a ser comercializado un Motorola que pesaba doce veces menos: el DynaTAC 8000X. Catorce años más tarde vino un aparato liviano y elegante de sólo de 88 gramos.Las últimas invenciones parecían cada vez más increíbles: un móvil con cámara a color incorporada, la aparición de los teléfonos inteligentes con las últimas tecnologías en multimedia, un aparato con pantalla táctil. Desde el primer momento las innovaciones no han parado. Este es un recorrido por los momentos más importantes de la era del celular.</h2>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','imagenes/historia.png',1)"><img src="imagenes/evolucion.png" width="239" height="170" id="Image11"></a>     </div>
+  </div>
+    <div data-role="footer" data-theme="c" data-position="fixed">
+     <h4>Aplicacion Dos, LGM</h4>
+    </div>
+</div>
+
+<div data-role="page" id="Pagina3"  data-add-back-btn="true" data-theme="c">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Clasificacion de los celulares por gama</h1>
+     <p>&nbsp;</p>
+    </div>
+   
+  <div data-role="content" align="center">
+     <div>
+      <h2 align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image14','','imagenes/ga.jpg',1)"><img src="imagenes/bma.jpg" width="286" height="187" id="Image14"></a></h2>
+      <h2 align="left">Gama baja</h2>
+      <p align="left">En está categoría entran desde marcas chinas, imitaciones de gama media o alta hasta terminales obsoletos con muy pocas excepciones</p>
+      <div align="left">
+        <ul>
+          <li>Tienen funciones básicas o las funciones que traen ya no están a la altura de un SmartPhone (ej:nokia)</li>
+          <li>Precios muy economicos</li>
+          <li>Características muy limitadas (cámara VGA, memoria interna, sin flash, se ponen muy lentos con el tiempo)</li>
+          <li>No reciben soporte ni actualizaciones.      </li>
+        </ul>
+         <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+    <h1 align="center"> Ejemplo</h1>
+     <div>
+      <p align="center"> Ejemplo de gama baja: </p>
+      <div align="center"><br>
+      </div>
+     </div>
+     <div>
+       <div align="center"><img src="imagenes/gamabaja.jpg" width="267" height="181">
+       </div>
+     </div>
+    </div>
+   </div>
+        
+        <ul>
+        </ul>
+      </div>
+      <p align="left">&nbsp;</p>
+      <h2 align="left">Gama media:</h2>
+      <p align="left">Aquí se ubican los SmartPhones algunos dispositivos de marcas asiáticas, dispositivos devaluados por el tiempo que tienen en el mercado (puede ser engañoso) y las propuestas conservadoras en especificaciones de marcas reconocidas que pueden hacer mucho pero no tanto.</p>
+      <div align="left">
+        <ul>
+          <li>Suelen ser muy equilibrados en sus características</li>
+          <li>Generalmente no superan los 500 dólares en precio (como mucho).</li>
+          <li>Tienen algunas funciones de la gama alta del momento.</li>
+          <li>Los materiales ya son de calidad aceptable.</li>
+          <li>Pantallas que no superan las 4.5 pulgadas (en promedio).</li>
+          <li>Cámaras de 3 a 5 Mpx</li>
+          <li>Tienen soporte limitado pero existe comunidad de desabolladores para actualizar con una ROM</li>
+        </ul>
+         <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+    <h1 align="center"> Ejemplo</h1>
+     <div>
+      <p align="center"> Ejemplo de gama media: </p>
+      <div align="center"><br>
+      </div>
+     </div>
+     <div>
+       <div align="center"><img src="imagenes/gamamed.jpg" width="253" height="183">
+       </div>
+     </div>
+    </div>
+   </div>
+      </div>
+      <p align="left">&nbsp;</p>
+      <h2 align="left">Gama alta</h2>
+      <p align="left">Aquí se ubican los mejores, se distinguen por sus exquisitas especificaciones pero no necesariamente representan una mejor experiencia al usarlos si no se elige con cuidado.</p>
+      <p align="left">Los mejores avances tecnológicos pueden aparecer en está gama para luego ser heredados con el tiempo a la gama media en menor medida.</p>
+      <p align="left">También pueden incluirse otros terminales no tan nuevos pero que siguen siendo una excelente opción en gama alta aunque no cumplan con el requisito del precio. </p>
+       <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+    <h1> Ejemplo</h1>
+     <div>
+      <p> Ejemplo de gama alta: </p>
+      <br>
+     </div>
+     <div>
+      <img src="imagenes/cel2017.jpg" width="256" height="181">
+     </div>
+    </div>
+   </div>
+     </div>
+  </div>
+    <div data-role="footer" data-theme="c" data-position="fixed">
+     <h4>Aplicacion Dos, LGM</h4>
+    </div>
+</div>
+   
+   
+<div data-role="page" id="Pagina4"  data-add-back-btn="true" data-theme="c">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Compañias en Mexico</h1>
+    </div>
+    <div data-role="content" align="center">
+     <div>
+      <h2>Compañías telefónicas en México</h2>
+      <p>El servicio de telefonía móvil</a> en México</strong> alcanza, según estimaciones para el año 2013, a un total de 90 millones de líneas celulares activas (la población mexicana se calcula cerca a los 120 millones de habitantes).       </p>
+      <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','imagenes/mundo.png',1)"><img src="imagenes/lineas.jpg" width="356" height="231" id="Image13"></a></p>
+      <p><strong>Lineas en Mexico </strong></p>
+      <p><a href="http://www.telcel.com/" target="_self">Telcel</a></p>
+      <p>Servicio de telefonía digital y GSM nacional. Incluye información sobre la empresa, servicios, equipos, envío de mensajes escritos y zonas de cobertura.</p>
+      
+      <p><a href="https://www.unefon.com.mx/" target="_self">Unefon</a></p>
+      <p><em>Unefon</em> te ofrece servicios de telefonía y una gran variedad de teléfonos celulares en prepago. ¡Hazte escuchar!</p>
+      
+      <p><a href="http://www.movistar.com.mx/" target="_self">Movistar</a></p>
+      <p>Descubre el mundo de servicios <em>Movistar</em>. Telefonía móvil y fija, Internet, tarifas, promociones y más, para particulares, empresas y grandes clientes.</p>
+      
+      <p><a href="https://www.att.com.mx/" target="_self">Iusacell</a> (AT&amp;T)</p>
+      <p>AT&amp;T tiene los Planes de telefonía móvil más sorprendentes y transparentes de México. Es tiempo de algo mejor. Conoce nuestros servicios de telefonía móvil.</p>
+      <div data-role="collapsible" data-content-theme="false">
+        <h1> Logos</h1>
+     <div>
+      <p>  Estas son las lineas en Mexico</p>
+      <br>
+     </div>
+     <div>
+       <p><img src="imagenes/telefonicas.png" width="263" height="234"></p>
+     </div>
+  </div>
+   </div>
+      <p>&nbsp;</p>
+    </div>
+    </div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+     <h4>Aplicacion Dos, LGM</h4>
+  </div>
+</div>
+    
+    
+<div data-role="page" id="Pagina5"  data-add-back-btn="true" data-theme="c">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>Telefonos del futuro</h1>
+     </div>
+     <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+    <h1 align="center"> Asi podrian ser los celulares del futuro </h1>
+     <div>
+      <p align="center"> Movil del futuro  </p>
+      <div align="center"><br>
+      </div>
+     </div>
+     <div>
+       <div align="center"><img src="imagenes/movilesdelfuturo.png" width="33%" height="20%">
+       </div>
+     </div>
+    </div>
+   </div>
+     <div data-role="content" align="center">
+      <div>
+       <h4 align="left">Con el tiempo, las novedades tecnológicas han avenzado demaciado. Hace varias décadas nadie se imaginaba que en 2005 andaríamos con celulares en nuestros bolsillos para hacer llamadas</a> y mandar SMS, ahora muchos nos ponemos a pensar como serian los celulares en el futuro; de acuendo a investigaciones y experimentos esto podrían tener los celulares del futuro en cuanto a las posibilidades de su hardware.</h4>
+       <h4 align="left">1. Pantallas flexibles:
+         Fabricantes como LG y Samsung han estado coqueteando con la idea desde hace ya un tiempo. Conforme las pantallas se hacen más y más grandes, vemos que hay un límite en el tamaño en el que es cómodo manejar un smartphone, especialmente.
+       </h4>
+       <h4 align="left">2. Nuevas formas de autenticación:
+         compañías como Fujitsu están desarrollando tecnología de reconocimiento de iris no invasiva, y así ya tenemos un equipo con cámaras capaces de diferenciar el ojo del usuario. Microsoft también presentó una solución similar en sus recientes equipos Lumia 950 y Lumia 950 XL. Otras compañías como Qualcomm están desarrollando nuevos sensores de huellas integrados en la pantalla del equipo, basados en el sonar. Así, por medio de ultrasonido sería posible identificar la superficie de cada dedo en particular.         </h4>
+       <h4 align="left">3. Baterías más duraderas:
+         Hay avances en las baterías de iones de aluminio, aunque todavía estas baterías están en una fase inicial. Por otro lado, también hay investigaciones en cómo aumentar el nivel de litio sin que la batería llegue a ser peligrosa, gracias a materiales como el Kevlar.         </h4>
+       <h4 align="left">4. Sensores 3D:
+         Project Tango es uno de los proyectos alternativos de Google. Por el momento consiste en una tableta que tiene varias cámaras que le permiten analizar y entender su entorno. Esta tecnología, que por el momento no se encuentra disponible para los consumidores, podría ser el futuro de la realidad aumentada en los móviles. Además, esto permitiría a personas con discapacidad visual moverse por un espacio que no conoce, mediante comandos de voz.</h4>
+       <h4 align="left"> 5. Nuevos materiales:
+         El grafeno parece ser el próximo material a utilizar en el ámbito de la electrónica de consumo. Desde la fabricación de baterías, que permiten una carga más rápida y mayor concentración de energía por kilogramo, hasta pantallas más resistentes, flexibles y prácticame irrompibles. </h4>
+       <div>
+         <h2 align="left">&nbsp;</h2>
+       </div>
+       <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','imagenes/futuro.png',1)"><img src="imagenes/nokia.png" width="306" height="122" id="Image10"></a></p>
+      </div>
+     </div>
+    <div data-role="footer" data-theme="c" data-position="fixed">
+     <h4>Aplicacion Dos, LGM</h4>
+    </div>
+</div>
+  
+  
+  
+</body>
+</html>
